@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  --main--color: #fffbeb;
+  --second--color: #070707;
+  --tittle--color--first: #fde68a;
+  --tittle--color--second: #d97706;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding: 0rem 5rem;
+}
+
+footer {
+  padding: 5rem 5rem;
+  background-color: #d97706;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: #070707;
+}
+
+.btn__3 {
+  background-color: #fde68a;
+  padding: 1.5rem 3.5rem;
+  border-radius: 1.3rem;
+  margin-top: 3rem;
+  max-width: fit-content;
+}
+
+.btn__2 {
+  background-color: var(--second--color);
+  padding: 1.5rem 3.5rem;
+  border-radius: 1.3rem;
+  margin-top: 3rem;
+  max-width: fit-content;
+}
+
+.btn {
+  background-color: #d97720;
+  padding: 1.5rem 3.5rem;
+  border-radius: 1.3rem;
+  margin-top: 3rem;
+}
+
+.none {
+  display: none;
+}
+
+.line {
+  margin: 5rem 0;
+  color: #707070;
+}
+/* Start */
+
+header .header__container {
+  max-width: 2500px;
+  margin: 0 auto;
+}
+
+header .header__top {
+  background-color: #d97706;
+  height: 5.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5rem;
+}
+
+header .header__top h3 {
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #fde68a;
+  text-transform: uppercase;
+}
+
+header .header___bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5rem;
+}
+
+header .header___bottom .logo h2 a {
+  font-size: 6.4rem;
+  color: var(--main--color);
+  font-weight: bold;
+}
+
+header .header___bottom .navbar {
+  width: 30%;
+}
+
+header .header___bottom .navbar ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header .header___bottom .navbar ul li {
+  font-size: 2.6rem;
+  color: var(--main--color);
+  text-transform: uppercase;
+}
+
+header .header___bottom .number span {
+  font-size: 2.6rem;
+  color: var(--main--color);
+}
+
+.main__container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+#home {
+  padding-top: 5rem;
+}
+
+#home .tittle {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#home .tittle .first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home .tittle #code {
+  grid-column: 2 / span 4;
+  font-size: 18.7rem;
+  color: var(--tittle--color--first);
+  letter-spacing: -2rem;
+  font-weight: 400;
+}
+
+#home .tittle #desıng {
+  grid-column: 1 / 4;
+  font-size: 28rem;
+  letter-spacing: -2rem;
+  font-weight: 400;
+  color: var(--tittle--color--second);
+  position: relative;
+  top: -8rem;
+}
+
+#home .tittle .second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -8rem;
+}
+
+#home .cotnent {
+  display: flex;
+  gap: 1.5rem;
+  position: relative;
+  top: -10rem;
+}
+
+#home .cotnent .content__information {
+  position: relative;
+  top: -5rem;
+}
+
+#home .cotnent .content__information h2 {
+  font-size: 13.3rem;
+  letter-spacing: -1rem;
+  font-weight: 400;
+  color: #b45309;
+}
+
+#home .cotnent .content__information p {
+  font-size: 2.4rem;
+}
+
+#home .cotnent .content__information .btn a {
+  font-size: 3.2rem;
+  font-weight: 600;
+  letter-spacing: -0.2rem;
+  text-transform: uppercase;
+}
+
+#need {
+  background-color: #ffffff;
+  height: fit-content;
+}
+
+#need .need__title {
+  text-align: center;
+}
+
+#need .need__title h2 {
+  color: var(--second--color);
+  font-size: 30rem;
+  letter-spacing: -2.2rem;
+}
+
+#need .need__content {
+  display: flex;
+  gap: 1.5rem;
+}
+
+#need .need__content .need__infermation {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+#need .need__content .need__infermation h3 {
+  color: var(--second--color);
+  font-size: 13rem;
+  letter-spacing: -1rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+#need .need__content .need__infermation p {
+  color: var(--second--color);
+  margin-top: 5rem;
+  font-size: 2.4rem;
+}
+
+#need .need__content .need__infermation .btn__2 a {
+  font-size: 3.2rem;
+  font-weight: 600;
+  letter-spacing: -0.2rem;
+  text-transform: uppercase;
+}
+
+#game {
+  background-color: #fde68a;
+}
+
+#game .game__content {
+  display: flex;
+  gap: 3rem;
+  padding-top: 15rem;
+}
+
+#game .game__inermation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+}
+
+#game .game__inermation h3 {
+  color: var(--second--color);
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+#game .game__inermation p {
+  font-size: 2.4rem;
+  color: var(--second--color);
+  width: 80%;
+}
+
+#game .game__inermation .btn__2 a {
+  font-size: 3.2rem;
+  font-weight: 600;
+  letter-spacing: -0.2rem;
+  text-transform: uppercase;
+}
+
+#game .bottom__title {
+  text-align: center;
+}
+
+#game .bottom__title span {
+  font-size: 25rem;
+  font-weight: 600;
+  letter-spacing: -2rem;
+  text-transform: uppercase;
+  color: var(--second--color);
+  position: relative;
+  bottom: -8rem;
+}
+
+#game__2 .top__title {
+  text-align: center;
+}
+
+#game__2 .top__title span {
+  font-size: 25rem;
+  font-weight: 600;
+  letter-spacing: -2rem;
+  text-transform: uppercase;
+  color: var(--tittle--color--first);
+  position: relative;
+  top: -9rem;
+}
+
+#game__2 .game__2__content {
+  display: flex;
+  gap: 3rem;
+}
+
+#game__2 .game__2__content .game__2__infermation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8rem;
+}
+
+#game__2 .game__2__content .game__2__infermation h3 {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+#game__2 .game__2__content .game__2__infermation p {
+  font-size: 2.4rem;
+  width: 80%;
+}
+
+#game__2 .game__2__content .game__2__infermation a {
+  font-size: 3.2rem;
+  font-weight: 600;
+  letter-spacing: -0.2rem;
+  text-transform: uppercase;
+}
+
+#game__2 .game__2__content .game__2__images {
+  position: relative;
+  top: -12rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#project .project__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 4rem;
+  margin-bottom: 5rem;
+}
+
+#project .project__content h3 {
+  font-size: 23.5rem;
+  color: var(--tittle--color--second);
+  text-transform: uppercase;
+  letter-spacing: -2.3rem;
+  line-height: 0.83;
+}
+
+#project .project__content .project__images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#project .project__content .project__images__box .project__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+#project .project__content .project__images__box .project__icon i {
+  font-size: 4.6rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  color: #fde68a;
+  cursor: pointer;
+}
+
+#project .project__content .project__information p {
+  font-size: 2.4rem;
+  line-height: 1;
+}
+
+#project .project__content .project__bottom__picutre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#project .project__content .project__bottom__picutre img {
+  width: 15%;
+}
+
+#fot .top__fotter {
+  display: flex;
+  gap: 5rem;
+}
+
+#fot .top__fotter .fotter__box {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#fot .top__fotter .fotter__box .fotter__box_item {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#fot .top__fotter .fotter__box .fotter__box_item h3 {
+  font-size: 3.2rem;
+  color: #18181b;
+}
+
+#fot .top__fotter .fotter__box .fotter__box_item p {
+  color: #18181b;
+  font-size: 2.4rem;
+}
+
+#fot .bottom__fotter {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0rem 5rem;
+}
+
+#fot .bottom__fotter .left__box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#fot .bottom__fotter .left__box h3 {
+  font-size: 4.3rem;
+  padding-right: 1rem;
+  border-right: 1px solid #fff;
+}
+
+#fot .bottom__fotter .left__box span {
+  font-size: 3.5rem;
+  font-weight: lighter;
+}
+
+#fot .bottom__fotter .right__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#fot .bottom__fotter .right__box h3 a {
+  font-size: 3.2rem;
+  color: #18181b;
+}
+
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 20%;
+  }
+}
